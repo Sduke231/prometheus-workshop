@@ -37,3 +37,14 @@ scrape_configs:
 
     static_configs:
       - targets: ['dotnet-service']
+
+  - job_name: 'docker'
+         # metrics_path defaults to '/metrics'
+         # scheme defaults to 'http'.
+
+    # docker.for.mac.localhost:9090 -> MAC
+    # docker.for.win.localhost:9090 -> WIN
+    # localhost -> Linux
+
+    static_configs:
+      - targets: ['HERE']
